@@ -137,6 +137,15 @@ h1 {
   margin: 0.67em 0;
 }
 
+h2 {
+  font-size: 1.2em;
+}
+h3 {
+  font-size: 1.1 em;
+}
+h4 {
+  font-size: 1.0 em;
+}
 /**
  * Address styling not present in IE 8/9.
  */
@@ -183,6 +192,7 @@ sub {
 
 img {
   border: 0;
+  text-align: center;
 }
 
 /**
