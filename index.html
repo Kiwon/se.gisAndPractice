@@ -140,6 +140,56 @@
                     </li>              
                 </ul>
             </li>
+            <li><a href="#week-06">Week 06 : Plug in 사용하기 / Plugins </a>
+                <ul>
+                    <li><a href="#Plugin-01">Plugin 01 : Coordinate Capture</a>
+                    </li>
+                    <li><a href="#plugin-02">Plugin 02 : TMS For Korea</a>
+                    </li>
+                    <li><a href="#plugin-03">Plugin 03 : OpenLayers Plugin</a>
+                    </li>
+                    <li><a href="#plugin-04">Plugin 04 : Table Manager</a>
+                    </li>
+                    <li><a href="#plugin-05">Plugin 05 : GEarthView</a>
+                    </li>
+                </ul>
+            </li>
+            <li><a href="#week-07">Week 07 : Plug in 사용하기 (GRASS) / Plugins (GRASS)</a>
+                <ul>
+                    <li><a href="#grass-gis">Grass GIS</a>
+                    </li>
+                    <li><a href="#grass-in-qgis">GRASS in QGIS</a>
+                    </li>
+                    <li><a href="#example-for-hydrological-analysis-with-grass-plugin">수문분석을 위한 GRASS 플러그인 예제 / Example for Hydrological Analysis with GRASS Plugin</a>
+                    <ul>
+                        <li><a href="#fill-sink-flow-direction">Fill Sink &amp; Flow Direction</a>
+                        </li>
+                        <li><a href="#slope-and-aspect">Slope and Aspect</a>
+                        </li>
+                        <li><a href="#stream-network">Stream network</a>
+                        </li>    
+                    </ul>
+                    </li>
+                </ul>
+            </li>
+            <li><a href="#week-08">Week 08 : Plug in 사용하기 (SAGA) / Plugins (SAGA) </a>
+                <ul>
+                    <li><a href="#saga-gis">SAGA GIS</a>
+                    </li>
+                    <li><a href="#saga-in-qgis">SAGA in QGIS</a>
+                    </li>
+                    <li><a href="#example-for-hydrological-analysis-with-saga-plugin">수문분석을 위한 SAGA 플러그인 예제 / Example for Hydrological Analysis with SAGA Plugin</a>
+                    <ul>
+                        <li><a href="#fill-sink">Fill Sink (wang &amp; liu)</a>
+                        </li>
+                        <li><a href="#catchment-area">Catchment area (flow tracing)</a>
+                        </li>
+                    </ul>
+                    </li>
+                </ul>1
+            </li>
+            
+            
         </ul>
         
        
@@ -875,10 +925,282 @@
         </ul>
 
 
+        <!-- Week 06 Plug in 사용하기 / Plugins ======================================================== -->
+        <!---->
+        <!---->
+        <!---->
+        <!---->
+        <!---->
+        <div class="line-basic"> </div>
+        <h1 id="week-06">Week 06 : Plug in 사용하기 / Plugins</h1>
 
+<li><i>사용</i> : </li>
+</ul>
+<div style="padding-left: 30pt">
+→ Plugins &gt; Manage and install plugins ...
+</div>
+<p></p>
 
+<p>
+</p><ul>
+<li><i>설정</i> : </li>
+</ul>
+<div style="padding-left: 30pt">
+→ Plugins &gt; Manage and install plugins ... &gt; Settings
+</div>
+<p></p>
 
+<p>
+</p><ul>
+<li><i>위치</i> : </li>
+</ul>
+<div style="padding-left: 30pt">
+Directory where plugins are installed
+</div>
+<div style="padding-left: 60pt">
+<u>Linux</u> : .qgis/python/plugins/<br>
+<u>Window</u> : C:\Users\Username\.qgis\python
+</div>
+<p></p>
 
+<p>
+</p><ul>
+<li><i>링크</i> : 
+<ul>
+<li>QGIS Plugin manual [<a href="http://docs.qgis.org/2.8/en/docs/user_manual/plugins/plugins_index.html" title="Link" class="http">Link</a>]</li>
+<li>QGIS Plugin Repository [<a href="http://plugins.qgis.org/plugins/" title="Link" class="http">Link</a>]</li>
+</ul></li>
+</ul>
+<p></p>
+
+<h4 id="plugin-01">Plugin 01 : Coordinate Capture</h4>
+
+<p>
+Capture mouse coordinates in different CRS<br>
+</p><ul>
+<li><i>링크</i> : QGIS_manual.Plugins.Coordinate_Capture_Plugin [<a href="http://docs.qgis.org/2.8/en/docs/user_manual/plugins/plugins_coordinate_capture.html" title="man" class="http">man</a>]</li>
+<li><i>설치</i> : Plugins &gt; Manage and install plugins ... &gt; Coordinate Capture</li>
+<li><i>사용</i> : View &gt; Panels &gt; Coordinate Capture</li>
+</ul>
+<div style="padding-left: 60pt">
+Vector &gt; Coordinate Capture &gt; Coordinate Capture
+</div>
+<p></p>
+
+<br>
+
+<h4 id="plugin-02">Plugin 02 : TMS For Korea</h4>
+
+<p>
+QGIS plugin. Daum, Naver, Olleh, VWorld, NGII Map Layers for Korean users<br>
+</p><ul>
+<li><i>링크</i> : QGIS Python Plugins Repository : TMS for Korea [<a href="http://plugins.qgis.org/plugins/tmsforkorea/" title="Link" class="http">Link</a>]</li>
+<li><i>설치</i> : Plugins &gt; Manage and install plugins ... &gt;  TMS for Korea</li>
+<li><i>사용</i> : Web &gt; TMS for Korea	</li>
+</ul>
+<p></p>
+
+<h4 id="plugin-03">Plugin 03 : OpenLayers Plugin</h4>
+
+<p>
+OpenStreetMap, Google Maps, Bing Maps, MapQuest layers and more<br>
+</p><ul>
+<li><i>링크</i> : QGIS Python Plugins Repository : OpenLayers Plugin [<a href="http://plugins.qgis.org/plugins/openlayers_plugin/" title="Link" class="http">Link</a>]</li>
+<li><i>설치</i> : Plugins &gt; Manage and install plugins ... &gt; OpenLayers Plugin</li>
+<li><i>사용</i> : Web &gt; OpenLayers plugin</li>
+</ul>
+<p></p>
+
+<h4 id="plugin-04">Plugin 04 : Table Manager</h4>
+
+<p>
+Manages the attribute table structure<br>
+</p><ul>
+<li><i>링크</i> : QGIS Python Plugins Repository : Table Manager [<a href="http://plugins.qgis.org/plugins/tablemanager/" title="Link" class="http">Link</a>]</li>
+<li><i>설치</i> : Plugins &gt; Manage and install plugins ... &gt; Table Manager</li>
+<li><i>사용</i> : Vector &gt; Table Manager</li>
+</ul>
+<p></p>
+
+<h4 id="plugin-05">Plugin 05 : GEarthView</h4>
+
+<p>
+GEarthView plugin displays QGis view and features with attributes (selected layer) into Google Earth<br>
+</p><ul>
+<li><i>링크</i> : QGIS Python Plugins Repository : GEarthView [<a href="http://plugins.qgis.org/plugins/gearthview/" title="Link" class="http">Link</a>]</li>
+<li><i>설치</i> : Plugins &gt; Manage and install plugins ... &gt; GEarthView</li>
+<li><i>사용</i> : Web &gt; GEarthView</li>
+</ul>
+<p></p>
+
+        
+        <!-- Week 07 Plug in 사용하기 (GRASS) / Plugins (SAGA) ======================================================== -->
+        <!---->
+        <!---->
+        <!---->
+        <!---->
+        <!---->
+        <div class="line-basic"> </div>
+        <h1 id="week-07">Week 07 : Plug in 사용하기 (GRASS) / Plugins (SAGA)</h1>
+        
+<h3 id="grass-gis">Grass GIS</h3>
+
+<p>
+</p><div style="padding-left: 30pt">
+<img src="./img/grass.png" height="90"><br>
+<u>Grass</u> [<a href="http://www.google.com/url?sa=t&amp;rct=j&amp;q=&amp;esrc=s&amp;source=web&amp;cd=1&amp;ved=0CCQQFjAA&amp;url=http%3A%2F%2Fgrass.osgeo.org%2F&amp;ei=rXMhVNLpO8L98QXWqoHQCQ&amp;usg=AFQjCNERBp00bCrLnLZ5cq_qY62KY9BQrA&amp;sig2=skuZ5CHvSBr4AL5Qp4gVBQ&amp;bvm=bv.75775273,d.dGc" title="Link" class="http">Link</a>] [<a href="https://en.wikipedia.org/wiki/GRASS_GIS" title="wie" class="https">wie</a>]
+</div>
+<ul style="padding-left: 30pt">
+<li>1982년 Construction Engineering Research Laboratory (USA-CERL)에서 개발이 시작되었고, 여러 기관을 겨쳐 현제는 OSGeo에서 프로젝트로 진행중이다.</li>
+<li>GPL License</li>
+</ul>
+<p></p>
+
+<h3 id="grass-in-qgis">GRASS in QGIS</h3>
+
+<p>
+</p><ul>
+<li>Full Reference Index [<a href="https://grass.osgeo.org/grass70/manuals/full_index.html" title="Link" class="https">Link</a>]</li>
+<li>Grass-QGIS relevant modul list [<a href="http://grasswiki.osgeo.org/wiki/GRASS-QGIS_relevant_module_list" title="Link" class="http">Link</a>]</li>
+</ul>
+<p></p>
+
+<p>
+<i>Insall</i> : default in QGIS 2.14 or above<br>
+<i>Access</i> : <br>
+</p><div style="padding-left: 30pt">
+→ Veiw &gt; Panels &gt; GRASS Tools<br>
+→ Plugins &gt; GRASS<br>
+→ Processing Toolbox &gt; GRASS GIS 7 comands [169 geoalgorithms]
+</div>
+<p></p>
+
+<br>
+
+<h3 id="example-for-hydrological-analysis-with-grass-plugin">수문분석을 위한 GRASS 플러그인 예제 / Example for Hydrological Analysis with GRASS Plugin</h3>
+
+<br>
+
+<h4 id="fill-sink-flow-direction">Fill Sink &amp; Flow Direction</h4>
+
+<p>
+r.fill.dir [<a href="http://grass.osgeo.org/grass64/manuals/r.fill.dir.html" title="Link" class="http">Link</a>]<br>
+Filters and generates a depressionless elevation map and a flow direction map from a given elevation raster map.<br>
+</p><ul style="padding-left: 30pt">
+<li><i>input</i> : DEM</li>
+<li><i>output</i> : Filled DEM, Flow Direction</li>
+</ul>
+<p></p>
+
+<p>
+</p><div style="padding-left: 30pt">
+<img src="./img/DEM.png" width="200">
+</div>
+<p></p>
+
+<br>
+
+<h4 id="slope-and-aspect">Slope and Aspect</h4>
+
+<p>
+r.slope.aspect [<a href="http://grass.osgeo.org/grass64/manuals/r.slope.aspect.html" title="Link" class="http">Link</a>]<br>
+Generates raster maps of slope and aspect from a elevation map (Aspect:45 90 135 180 225 270 315 360)<br>
+</p><ul style="padding-left: 30pt">
+<li><i>input</i> : Filled DEM</li>
+<li><i>Output</i> : Slope, Aspect</li>
+</ul>
+<p></p>
+
+<p>
+</p><div style="padding-left: 30pt">
+<img src="img/terrain.png" height="200">
+</div>
+<p></p>
+
+<br>
+
+<h4>Stream network</h4>
+
+<p>
+r.stream.extract [<a href="https://grass.osgeo.org/grass70/manuals/r.stream.extract.html" title="Link" class="https">Link</a>]<br>
+Performs stream network extraction. <br>
+</p><ul style="padding-left: 30pt">
+<li><i>input</i> : Filled DEM</li>
+<li><i>output</i> : stream network</li>
+</ul>
+
+       
+        
+        <!-- Week 08 Plug in 사용하기 (SAGA) / Plugins (SAGA) ======================================================== -->
+        <!---->
+        <!---->
+        <!---->
+        <!---->
+        <!---->
+        <div class="line-basic"> </div>
+        <h1 id="week-08">Week 08 : Plug in 사용하기 (SAGA) / Plugins (SAGA)</h1>
+        
+        
+<h3 id="#saga-gis">SAGA GIS</h3>
+
+<p>
+</p><div style="padding-left: 30pt">
+<img src="./img/saga_icon_100x100.png"><br>
+<u>SAGA GIS</u> [<a href="http://www.saga-gis.org/en/index.html" title="Link" class="http">Link</a>] [<a href="https://en.wikipedia.org/wiki/SAGA_GIS" title="wie" class="https">wie</a>]
+</div>
+<ul style="padding-left: 30pt">
+<li>독일 Dept. of Physical Geography, Göttingen의 연구팀에서 개발을 시작하였으며, 정식버전은 2007년도 버전이 마지막이나, 파생된 프로젝트는 지속적으로 개발 중이다.</li>
+</ul>
+<p></p>
+
+<h3 id="#saga-in-qgis">Saga in QGIS</h3>
+
+<p>
+</p><ul>
+<li>Mudul Libray Documentation (v2.2.6) - Contents [<a href="http://www.saga-gis.org/saga_module_doc/2.2.6/index.html" title="Link" class="http">Link</a>]</li>
+<li>Mudul Libray Documentation (v2.2.6) - Full Mudule Index [<a href="http://www.saga-gis.org/saga_module_doc/2.2.6/a2z.html" title="Link" class="http">Link</a>]</li>
+</ul>
+<p></p>
+
+<p>
+</p><div style="padding-left: 30pt">
+<i>Insall</i> : default in QGIS 2.14 or above<br>
+<i>Access</i> : 
+</div>
+<div style="padding-left: 60pt">
+→ Processing Toolbox &gt; SAGA
+</div>
+<p></p>
+
+<br>
+
+<h3 id="#example-for-hydrological-analysis-with-saga-plugin">수문분석을 위한 SAGA 플러그인 예제 / Example for Hydrological Analysis with SAGA Plugin</h3>
+
+<br>
+
+<h4 id="fill-sink">Fill Sink (wang &amp; liu)</h4>
+
+<p>
+[<a href="http://www.saga-gis.org/saga_module_doc/2.2.6/ta_preprocessor_4.html" title="Link" class="http">Link</a>]<br>
+This module uses an algorithm proposed by Wang &amp; Liu to identify and fill surface depressions in digital elevation models.<br>
+</p><ul style="padding-left: 30pt">
+<li><i>input</i> : DEM</li>
+<li><i>output</i> : Filled DEM, Flow Direction, Watershed Basins</li>
+</ul>
+<p></p>
+
+<h4 id="catchment-area">Catchment area (flow tracing)</h4>
+
+<p>
+[<a href="http://www.saga-gis.org/saga_module_doc/2.2.6/garden_learn_to_program_6.html" title="Link" class="http">Link</a>]<br>
+Calculate Catchment Area.<br>
+</p><ul style="padding-left: 30pt">
+<li><i>input</i> : DEM</li>
+<li><i>output</i> :  Catchment area Grid, Flow Path Length</li>
+</ul>
+
+       
+        
         <!-- ============================================= -->
         <footer class="site-footer">
             <span class="site-footer-owner"><a href="https://github.com/Kiwon/se.gisAndPractice">This home page(GIS and Practice)</a> is maintained by <a href="https://github.com/Kiwon" target="_blank">Kiwon</a>.</span>

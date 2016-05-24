@@ -20,7 +20,7 @@
       <layer-tree-layer expanded="1" checked="Qt::Checked" id="PC_Basin20160329221106015" name="PC_Basin">
         <customproperties/>
       </layer-tree-layer>
-      <layer-tree-layer expanded="1" checked="Qt::Checked" id="PC_DEM_P2_clipped20160503122033195" name="PC_DEM_P2.clipped">
+      <layer-tree-layer expanded="0" checked="Qt::Checked" id="PC_DEM_P2_clipped20160503122033195" name="PC_DEM_P2.clipped">
         <customproperties/>
       </layer-tree-layer>
       <layer-tree-layer expanded="0" checked="Qt::Unchecked" id="PC_DEM_P220160329221113047" name="PC_DEM_P2">
@@ -42,9 +42,6 @@
     <layer-tree-layer expanded="1" checked="Qt::Unchecked" id="st220160329212405034" name="st2">
       <customproperties/>
     </layer-tree-layer>
-    <layer-tree-layer expanded="1" checked="Qt::Unchecked" id="river_Korea20160503121710868" name="river.Korea">
-      <customproperties/>
-    </layer-tree-layer>
     <layer-tree-layer expanded="1" checked="Qt::Unchecked" id="temp_points20160329205648928" name="temp.points">
       <customproperties/>
     </layer-tree-layer>
@@ -57,7 +54,7 @@
     <layer-tree-layer expanded="1" checked="Qt::Unchecked" id="OpenLayers_plugin_layer20160420132019782" name="Naver Street">
       <customproperties/>
     </layer-tree-layer>
-    <layer-tree-group expanded="0" checked="Qt::Unchecked" name="srtm">
+    <layer-tree-group expanded="1" checked="Qt::Unchecked" name="srtm">
       <customproperties/>
       <layer-tree-layer expanded="0" checked="Qt::Unchecked" id="srtm_62_0620160329220942960" name="srtm_62_06">
         <customproperties/>
@@ -74,10 +71,10 @@
   <mapcanvas>
     <units>meters</units>
     <extent>
-      <xmin>300289.15205190819688141</xmin>
-      <ymin>543217.47222243796568364</ymin>
-      <xmax>339661.50916102575138211</xmax>
-      <ymax>564074.57589548348914832</ymax>
+      <xmin>299235.50410246173851192</xmin>
+      <ymin>532189.0334473317489028</ymin>
+      <xmax>347063.79111120931338519</xmax>
+      <ymax>573289.93306367844343185</ymax>
     </extent>
     <rotation>0</rotation>
     <projections>1</projections>
@@ -117,26 +114,25 @@
   <visibility-presets/>
   <layer-tree-canvas>
     <custom-order enabled="0">
+      <item>tempRiver20160503120326589</item>
+      <item>st_wl20160503115037000</item>
+      <item>st_p20160503114828839</item>
+      <item>river_PyeongChang20160503121802108</item>
       <item>PC_Basin20160329221106015</item>
+      <item>PC_DEM_P2_clipped20160503122033195</item>
       <item>PC_DEM_P220160329221113047</item>
       <item>ldcv_pc_ascii20160329221056704</item>
       <item>Soil_pc_30_ascii20160329215929031</item>
       <item>st_p_shp20160412084426225</item>
-      <item>temp_points20160329205648928</item>
-      <item>st220160329212405034</item>
-      <item>st020160411235706538</item>
       <item>st120160329212404867</item>
+      <item>st220160329212405034</item>
+      <item>temp_points20160329205648928</item>
+      <item>st020160411235706538</item>
       <item>OpenLayers_plugin_layer20160420132240599</item>
       <item>OpenLayers_plugin_layer20160420132019782</item>
       <item>srtm_62_0620160329220942960</item>
       <item>srtm_62_0520160329220942645</item>
       <item>Korea_center201020160329184055688</item>
-      <item>st_p20160503114828839</item>
-      <item>st_wl20160503115037000</item>
-      <item>tempRiver20160503120326589</item>
-      <item>river_Korea20160503121710868</item>
-      <item>river_PyeongChang20160503121802108</item>
-      <item>PC_DEM_P2_clipped20160503122033195</item>
     </custom-order>
   </layer-tree-canvas>
   <legend updateDrawingOrder="true">
@@ -166,8 +162,8 @@
           <legendlayerfile isInOverview="0" layerid="PC_Basin20160329221106015" visible="1"/>
         </filegroup>
       </legendlayer>
-      <legendlayer drawingOrder="-1" open="true" checked="Qt::Checked" name="PC_DEM_P2.clipped" showFeatureCount="0">
-        <filegroup open="true" hidden="false">
+      <legendlayer drawingOrder="-1" open="false" checked="Qt::Checked" name="PC_DEM_P2.clipped" showFeatureCount="0">
+        <filegroup open="false" hidden="false">
           <legendlayerfile isInOverview="0" layerid="PC_DEM_P2_clipped20160503122033195" visible="1"/>
         </filegroup>
       </legendlayer>
@@ -202,11 +198,6 @@
         <legendlayerfile isInOverview="0" layerid="st220160329212405034" visible="0"/>
       </filegroup>
     </legendlayer>
-    <legendlayer drawingOrder="-1" open="true" checked="Qt::Unchecked" name="river.Korea" showFeatureCount="0">
-      <filegroup open="true" hidden="false">
-        <legendlayerfile isInOverview="0" layerid="river_Korea20160503121710868" visible="0"/>
-      </filegroup>
-    </legendlayer>
     <legendlayer drawingOrder="-1" open="true" checked="Qt::Unchecked" name="temp.points" showFeatureCount="0">
       <filegroup open="true" hidden="false">
         <legendlayerfile isInOverview="0" layerid="temp_points20160329205648928" visible="0"/>
@@ -227,7 +218,7 @@
         <legendlayerfile isInOverview="0" layerid="OpenLayers_plugin_layer20160420132019782" visible="0"/>
       </filegroup>
     </legendlayer>
-    <legendgroup open="false" checked="Qt::Unchecked" name="srtm">
+    <legendgroup open="true" checked="Qt::Unchecked" name="srtm">
       <legendlayer drawingOrder="-1" open="false" checked="Qt::Unchecked" name="srtm_62_06" showFeatureCount="0">
         <filegroup open="false" hidden="false">
           <legendlayerfile isInOverview="0" layerid="srtm_62_0620160329220942960" visible="0"/>
@@ -245,7 +236,7 @@
       </filegroup>
     </legendlayer>
   </legend>
-  <Composer title="temp" visible="0">
+  <Composer title="temp" visible="1">
     <Composition gridVisible="1" printResolution="300" paperWidth="210" snapGridOffsetX="0" guidesVisible="1" snapGridResolution="10" snapGridOffsetY="0" alignmentSnap="1" snapping="0" snapTolerancePixels="5" numPages="1" paperHeight="297" smartGuides="1" printAsRaster="0" generateWorldFile="0">
       <symbol alpha="1" type="fill" name="">
         <layer pass="0" class="SimpleFill" locked="0">
@@ -263,7 +254,7 @@
         </layer>
       </symbol>
       <ComposerPicture resizeMode="0" pictureRotation="0" pictureWidth="33.8642" file="/usr/share/qgis/svg/arrows/NorthArrow_07.svg" pictureHeight="33.8642" mapId="-1" anchorPoint="0">
-        <ComposerItem pagey="60.4631" page="1" id="" lastValidViewScaleFactor="-1" positionMode="0" positionLock="false" x="23.4106" y="60.4631" visibility="1" zValue="11" background="false" transparency="0" frameJoinStyle="miter" blendMode="0" width="33.8642" outlineWidth="0.3" excludeFromExports="0" uuid="{c8e3c8e9-5cd4-48ca-af8e-6ac856bfef96}" height="40.0615" itemRotation="0" frame="false" pagex="23.4106">
+        <ComposerItem pagey="60.4631" page="1" id="" lastValidViewScaleFactor="-1" positionMode="0" positionLock="false" x="23.4106" y="60.4631" visibility="1" zValue="6" background="false" transparency="0" frameJoinStyle="miter" blendMode="0" width="33.8642" outlineWidth="0.3" excludeFromExports="0" uuid="{c8e3c8e9-5cd4-48ca-af8e-6ac856bfef96}" height="40.0615" itemRotation="0" frame="false" pagex="23.4106">
           <FrameColor alpha="255" red="0" blue="0" green="0"/>
           <BackgroundColor alpha="255" red="255" blue="255" green="255"/>
           <dataDefinedSource expr="" field="" active="false" useExpr="true"/>
@@ -307,7 +298,7 @@
             </customproperties>
           </layer-tree-layer>
         </layer-tree-group>
-        <ComposerItem pagey="163.237" page="1" id="" lastValidViewScaleFactor="-1" positionMode="0" positionLock="false" x="13.599" y="163.237" visibility="1" zValue="9" background="false" transparency="5" frameJoinStyle="miter" blendMode="0" width="53.0078" outlineWidth="0.3" excludeFromExports="0" uuid="{1e0d6c39-ce38-4926-a812-73d0e49c3fce}" height="105.1" itemRotation="0" frame="false" pagex="13.599">
+        <ComposerItem pagey="163.237" page="1" id="" lastValidViewScaleFactor="-1" positionMode="0" positionLock="false" x="13.599" y="163.237" visibility="1" zValue="5" background="false" transparency="5" frameJoinStyle="miter" blendMode="0" width="53.0078" outlineWidth="0.3" excludeFromExports="0" uuid="{1e0d6c39-ce38-4926-a812-73d0e49c3fce}" height="105.1" itemRotation="0" frame="false" pagex="13.599">
           <FrameColor alpha="255" red="0" blue="0" green="0"/>
           <BackgroundColor alpha="255" red="255" blue="255" green="255"/>
         </ComposerItem>
@@ -317,7 +308,7 @@
         <fillColor2 alpha="255" red="255" blue="255" green="255"/>
         <strokeColor alpha="255" red="0" blue="0" green="0"/>
         <textColor alpha="255" red="0" blue="0" green="0"/>
-        <ComposerItem pagey="254.931" page="1" id="" lastValidViewScaleFactor="-1" positionMode="0" positionLock="false" x="57.2749" y="254.931" visibility="1" zValue="8" background="false" transparency="0" frameJoinStyle="miter" blendMode="0" width="77.3509" outlineWidth="0.3" excludeFromExports="0" uuid="{f25d07e5-720e-4afc-b44d-a5905fb98696}" height="20" itemRotation="0" frame="false" pagex="57.2749">
+        <ComposerItem pagey="254.931" page="1" id="" lastValidViewScaleFactor="-1" positionMode="0" positionLock="false" x="57.2749" y="254.931" visibility="1" zValue="4" background="false" transparency="0" frameJoinStyle="miter" blendMode="0" width="77.3509" outlineWidth="0.3" excludeFromExports="0" uuid="{f25d07e5-720e-4afc-b44d-a5905fb98696}" height="20" itemRotation="0" frame="false" pagex="57.2749">
           <FrameColor alpha="255" red="0" blue="0" green="0"/>
           <BackgroundColor alpha="255" red="255" blue="255" green="255"/>
         </ComposerItem>
@@ -325,63 +316,17 @@
       <ComposerLabel valign="32" marginX="1" marginY="4" labelText="Basin Pyeong Chang" htmlState="0" halign="4">
         <LabelFont description="Noto Sans [unknown],26,-1,5,50,0,0,0,0,0"/>
         <FontColor red="0" blue="0" green="0"/>
-        <ComposerItem pagey="31.5153" page="1" id="" lastValidViewScaleFactor="-1" positionMode="0" positionLock="false" x="47.7208" y="31.5153" visibility="1" zValue="7" background="false" transparency="0" frameJoinStyle="miter" blendMode="0" width="114.558" outlineWidth="0.3" excludeFromExports="0" uuid="{2c96a552-1617-41ee-9405-44d57f4b5169}" height="19.4156" itemRotation="0" frame="false" pagex="47.7208">
+        <ComposerItem pagey="31.5153" page="1" id="" lastValidViewScaleFactor="-1" positionMode="0" positionLock="false" x="47.7208" y="31.5153" visibility="1" zValue="3" background="false" transparency="0" frameJoinStyle="miter" blendMode="0" width="114.558" outlineWidth="0.3" excludeFromExports="0" uuid="{2c96a552-1617-41ee-9405-44d57f4b5169}" height="19.4156" itemRotation="0" frame="false" pagex="47.7208">
           <FrameColor alpha="255" red="0" blue="0" green="0"/>
           <BackgroundColor alpha="255" red="255" blue="255" green="255"/>
         </ComposerItem>
       </ComposerLabel>
       <ComposerMap mapRotation="0" keepLayerSet="false" id="0" previewMode="Cache" drawCanvasItems="true">
-        <Extent ymin="533095.57425078714732081" xmin="300289.15205190819688141" ymax="574196.47386713430751115" xmax="339661.50916102575138211"/>
+        <Extent ymin="532017.16588621190749109" xmin="298719.90141910256352276" ymax="579367.17002487205900252" xmax="346548.18842785013839602"/>
         <LayerSet/>
         <Grid/>
-        <ComposerMapGrid rightAnnotationDirection="0" gridFramePenColor="0,0,0,255" show="0" bottomAnnotationPosition="1" annotationFont="Noto Sans,9,-1,5,50,0,0,0,0,0" annotationPrecision="3" showAnnotation="0" topFrameDivisions="0" uuid="{95e8b35b-b325-4b69-aeaf-cd3a3cc94615}" leftAnnotationDirection="0" topAnnotationPosition="1" rightAnnotationDisplay="0" offsetX="0" offsetY="0" rightFrameDivisions="0" gridStyle="0" annotationFontColor="0,0,0,255" intervalX="0" gridFrameSideFlags="15" intervalY="0" bottomAnnotationDirection="0" leftAnnotationDisplay="0" leftFrameDivisions="0" frameFillColor1="255,255,255,255" frameFillColor2="0,0,0,255" crossLength="3" gridFramePenThickness="0.5" bottomAnnotationDisplay="0" unit="0" topAnnotationDisplay="0" leftAnnotationPosition="1" blendMode="0" gridFrameStyle="0" rightAnnotationPosition="1" gridFrameWidth="2" name="Grid 1" annotationFormat="0" bottomFrameDivisions="0" topAnnotationDirection="0" frameAnnotationDistance="1">
-          <lineStyle>
-            <symbol alpha="1" type="line" name="">
-              <layer pass="0" class="SimpleLine" locked="0">
-                <prop k="capstyle" v="square"/>
-                <prop k="customdash" v="5;2"/>
-                <prop k="customdash_map_unit_scale" v="0,0"/>
-                <prop k="customdash_unit" v="MM"/>
-                <prop k="draw_inside_polygon" v="0"/>
-                <prop k="joinstyle" v="bevel"/>
-                <prop k="line_color" v="0,0,0,255"/>
-                <prop k="line_style" v="solid"/>
-                <prop k="line_width" v="0"/>
-                <prop k="line_width_unit" v="MM"/>
-                <prop k="offset" v="0"/>
-                <prop k="offset_map_unit_scale" v="0,0"/>
-                <prop k="offset_unit" v="MM"/>
-                <prop k="use_custom_dash" v="0"/>
-                <prop k="width_map_unit_scale" v="0,0"/>
-              </layer>
-            </symbol>
-          </lineStyle>
-          <markerStyle>
-            <symbol alpha="1" type="marker" name="">
-              <layer pass="0" class="SimpleMarker" locked="0">
-                <prop k="angle" v="0"/>
-                <prop k="color" v="0,0,0,255"/>
-                <prop k="horizontal_anchor_point" v="1"/>
-                <prop k="name" v="circle"/>
-                <prop k="offset" v="0,0"/>
-                <prop k="offset_map_unit_scale" v="0,0"/>
-                <prop k="offset_unit" v="MM"/>
-                <prop k="outline_color" v="0,0,0,255"/>
-                <prop k="outline_style" v="solid"/>
-                <prop k="outline_width" v="0"/>
-                <prop k="outline_width_map_unit_scale" v="0,0"/>
-                <prop k="outline_width_unit" v="MM"/>
-                <prop k="scale_method" v="area"/>
-                <prop k="size" v="2"/>
-                <prop k="size_map_unit_scale" v="0,0"/>
-                <prop k="size_unit" v="MM"/>
-                <prop k="vertical_anchor_point" v="1"/>
-              </layer>
-            </symbol>
-          </markerStyle>
-        </ComposerMapGrid>
         <AtlasMap scalingMode="2" atlasDriven="0" margin="0.10000000000000001"/>
-        <ComposerItem pagey="50.9309" page="1" id="" lastValidViewScaleFactor="2.69586" positionMode="0" positionLock="false" x="5" y="50.9309" visibility="1" zValue="6" background="true" transparency="0" frameJoinStyle="miter" blendMode="0" width="205" outlineWidth="0.3" excludeFromExports="0" uuid="{12defe90-61af-4534-b136-5d398cc21276}" height="214" itemRotation="0" frame="false" pagex="5">
+        <ComposerItem pagey="51" page="1" id="" lastValidViewScaleFactor="2.13043" positionMode="0" positionLock="false" x="7" y="51" visibility="1" zValue="1" background="true" transparency="0" frameJoinStyle="miter" blendMode="0" width="200" outlineWidth="0.3" excludeFromExports="0" uuid="{ccdc8cf2-6581-436f-978a-472b9f8d2f78}" height="198" itemRotation="0" frame="false" pagex="7">
           <FrameColor alpha="255" red="0" blue="0" green="0"/>
           <BackgroundColor alpha="255" red="255" blue="255" green="255"/>
         </ComposerItem>
@@ -407,7 +352,100 @@
       </symbol>
     </Composition>
   </Composer>
-  <projectlayers layercount="20">
+  <Composer title="temp3" visible="1">
+    <Composition gridVisible="0" printResolution="300" paperWidth="210" snapGridOffsetX="0" guidesVisible="1" snapGridResolution="10" snapGridOffsetY="0" alignmentSnap="1" snapping="0" snapTolerancePixels="5" numPages="1" paperHeight="297" smartGuides="1" printAsRaster="0" generateWorldFile="0">
+      <symbol alpha="1" type="fill" name="">
+        <layer pass="0" class="SimpleFill" locked="0">
+          <prop k="border_width_map_unit_scale" v="0,0"/>
+          <prop k="color" v="255,255,255,255"/>
+          <prop k="joinstyle" v="miter"/>
+          <prop k="offset" v="0,0"/>
+          <prop k="offset_map_unit_scale" v="0,0"/>
+          <prop k="offset_unit" v="MM"/>
+          <prop k="outline_color" v="0,0,0,255"/>
+          <prop k="outline_style" v="no"/>
+          <prop k="outline_width" v="0.26"/>
+          <prop k="outline_width_unit" v="MM"/>
+          <prop k="style" v="solid"/>
+        </layer>
+      </symbol>
+      <ComposerPicture resizeMode="0" pictureRotation="0" pictureWidth="31.1017" file="/usr/share/qgis/svg/arrows/NorthArrow_07.svg" pictureHeight="31.1017" mapId="-1" anchorPoint="0">
+        <ComposerItem pagey="37.4061" page="1" id="" lastValidViewScaleFactor="-1" positionMode="0" positionLock="false" x="27.7394" y="37.4061" visibility="1" zValue="7" background="false" transparency="0" frameJoinStyle="miter" blendMode="0" width="35.7249" outlineWidth="0.3" excludeFromExports="0" uuid="{8db88422-c1b2-460b-b5e6-d8410e8b936b}" height="31.1017" itemRotation="0" frame="false" pagex="27.7394">
+          <FrameColor alpha="255" red="0" blue="0" green="0"/>
+          <BackgroundColor alpha="255" red="255" blue="255" green="255"/>
+          <dataDefinedSource expr="" field="" active="false" useExpr="true"/>
+        </ComposerItem>
+      </ComposerPicture>
+      <ComposerLegend symbolWidth="7" title="Legend" boxSpace="2" splitLayer="0" equalColumnWidth="0" map="0" titleAlignment="1" symbolHeight="4" wmsLegendHeight="25" wrapChar="" fontColor="#000000" columnSpace="2" wmsLegendWidth="50" legendFilterByMap="1" columnCount="1">
+        <styles>
+          <style marginBottom="2" name="title" font="Noto Sans,16,-1,5,50,0,0,0,0,0"/>
+          <style marginTop="2" name="group" font="Noto Sans,14,-1,5,50,0,0,0,0,0"/>
+          <style marginTop="2" name="subgroup" font="Noto Sans,12,-1,5,50,0,0,0,0,0"/>
+          <style marginTop="2" name="symbol" font="Noto Sans,9,-1,5,50,0,0,0,0,0"/>
+          <style marginTop="2" marginLeft="2" name="symbolLabel" font="Noto Sans,12,-1,5,50,0,0,0,0,0"/>
+        </styles>
+        <layer-tree-group expanded="1" checked="Qt::PartiallyChecked" name="">
+          <customproperties/>
+          <layer-tree-group expanded="1" checked="Qt::PartiallyChecked" name="peongchanggang">
+            <customproperties/>
+            <layer-tree-layer expanded="1" checked="Qt::Unchecked" id="tempRiver20160503120326589" name="tempRiver">
+              <customproperties/>
+            </layer-tree-layer>
+            <layer-tree-layer expanded="1" checked="Qt::Checked" id="st_wl20160503115037000" name="st.wl">
+              <customproperties/>
+            </layer-tree-layer>
+            <layer-tree-layer expanded="1" checked="Qt::Checked" id="st_p20160503114828839" name="st.p">
+              <customproperties>
+                <property key="legend/title-label" value="precipitaton station"/>
+              </customproperties>
+            </layer-tree-layer>
+            <layer-tree-layer expanded="1" checked="Qt::Checked" id="river_PyeongChang20160503121802108" name="river.PyeongChang">
+              <customproperties/>
+            </layer-tree-layer>
+            <layer-tree-layer expanded="1" checked="Qt::Checked" id="PC_Basin20160329221106015" name="PC_Basin">
+              <customproperties/>
+            </layer-tree-layer>
+            <layer-tree-layer expanded="0" checked="Qt::Checked" id="PC_DEM_P2_clipped20160503122033195" name="PC_DEM_P2.clipped">
+              <customproperties/>
+            </layer-tree-layer>
+          </layer-tree-group>
+        </layer-tree-group>
+        <ComposerItem pagey="98.7507" page="1" id="" lastValidViewScaleFactor="-1" positionMode="0" positionLock="false" x="17.232" y="98.7507" visibility="1" zValue="6" background="true" transparency="0" frameJoinStyle="miter" blendMode="0" width="51.6734" outlineWidth="0.3" excludeFromExports="0" uuid="{6dbdd906-20b4-4f9e-b0ff-0feb491201bd}" height="119.9" itemRotation="0" frame="false" pagex="17.232">
+          <FrameColor alpha="255" red="0" blue="0" green="0"/>
+          <BackgroundColor alpha="255" red="255" blue="255" green="255"/>
+        </ComposerItem>
+      </ComposerLegend>
+      <ComposerScaleBar segmentMillimeters="8.73079" numMapUnitsPerScaleBarUnit="1000" numSegments="4" height="3" alignment="0" labelBarSpace="3" outlineWidth="1" units="1" numSegmentsLeft="2" lineJoinStyle="miter" style="Single Box" unitLabel="km" lineCapStyle="square" font="Noto Sans,12,-1,5,50,0,0,0,0,0" mapId="0" boxContentSpace="1" numUnitsPerSegment="2500">
+        <fillColor alpha="255" red="0" blue="0" green="0"/>
+        <fillColor2 alpha="255" red="255" blue="255" green="255"/>
+        <strokeColor alpha="255" red="0" blue="0" green="0"/>
+        <textColor alpha="255" red="0" blue="0" green="0"/>
+        <ComposerItem pagey="224.857" page="1" id="" lastValidViewScaleFactor="-1" positionMode="0" positionLock="false" x="19.7538" y="224.857" visibility="1" zValue="5" background="false" transparency="0" frameJoinStyle="miter" blendMode="0" width="60.2758" outlineWidth="0.3" excludeFromExports="0" uuid="{3e35af8e-ea8e-4494-b8b3-fc0e32a90531}" height="17.8985" itemRotation="0" frame="false" pagex="19.7538">
+          <FrameColor alpha="255" red="0" blue="0" green="0"/>
+          <BackgroundColor alpha="255" red="255" blue="255" green="255"/>
+        </ComposerItem>
+      </ComposerScaleBar>
+      <ComposerLabel valign="32" marginX="1" marginY="1" labelText="Basin Peong Chang" htmlState="0" halign="1">
+        <LabelFont description="Noto Sans [unknown],36,-1,5,50,0,0,0,0,0"/>
+        <FontColor red="0" blue="0" green="0"/>
+        <ComposerItem pagey="8.61198" page="1" id="" lastValidViewScaleFactor="-1" positionMode="0" positionLock="false" x="47.653" y="8.61198" visibility="1" zValue="4" background="false" transparency="0" frameJoinStyle="miter" blendMode="0" width="131.189" outlineWidth="0.3" excludeFromExports="0" uuid="{ec1cfb17-d5b6-48fa-8a80-5510d91267b9}" height="90.1387" itemRotation="0" frame="false" pagex="47.653">
+          <FrameColor alpha="255" red="0" blue="0" green="0"/>
+          <BackgroundColor alpha="255" red="255" blue="255" green="255"/>
+        </ComposerItem>
+      </ComposerLabel>
+      <ComposerMap mapRotation="0" keepLayerSet="false" id="0" previewMode="Cache" drawCanvasItems="true">
+        <Extent ymin="518085.45494377764407545" xmin="299235.50410246173851192" ymax="587393.5115672325482592" xmax="347063.79111120931338519"/>
+        <LayerSet/>
+        <Grid/>
+        <AtlasMap scalingMode="2" atlasDriven="0" margin="0.10000000000000001"/>
+        <ComposerItem pagey="26" page="1" id="" lastValidViewScaleFactor="1.74176" positionMode="0" positionLock="false" x="28" y="26" visibility="1" zValue="3" background="true" transparency="0" frameJoinStyle="miter" blendMode="0" width="167" outlineWidth="0.3" excludeFromExports="0" uuid="{d4935bcc-199c-4067-8a8d-cde22f98d3f4}" height="242" itemRotation="0" frame="false" pagex="28">
+          <FrameColor alpha="255" red="0" blue="0" green="0"/>
+          <BackgroundColor alpha="255" red="255" blue="255" green="255"/>
+        </ComposerItem>
+      </ComposerMap>
+    </Composition>
+  </Composer>
+  <projectlayers layercount="19">
     <maplayer minimumScale="-4.65661e-10" maximumScale="1e+08" simplifyDrawingHints="1" minLabelScale="0" maxLabelScale="1e+08" simplifyDrawingTol="1" geometry="Polygon" simplifyMaxScale="1" type="vector" hasScaleBasedVisibilityFlag="0" simplifyLocal="1" scaleBasedLabelVisibilityFlag="0">
       <id>Korea_center201020160329184055688</id>
       <datasource>./Korea_center2010.shp</datasource>
@@ -1188,136 +1226,6 @@
         <rasterresampler maxOversampling="2"/>
       </pipe>
       <blendMode>0</blendMode>
-    </maplayer>
-    <maplayer minimumScale="0" maximumScale="1e+08" simplifyDrawingHints="1" minLabelScale="0" maxLabelScale="1e+08" simplifyDrawingTol="1" geometry="Polygon" simplifyMaxScale="1" type="vector" hasScaleBasedVisibilityFlag="0" simplifyLocal="1" scaleBasedLabelVisibilityFlag="0">
-      <id>river_Korea20160503121710868</id>
-      <datasource>./river.Korea.shp</datasource>
-      <title></title>
-      <abstract></abstract>
-      <keywordList>
-        <value></value>
-      </keywordList>
-      <layername>river.Korea</layername>
-      <srs>
-        <spatialrefsys>
-          <proj4>+proj=tmerc +lat_0=38 +lon_0=127 +k=1 +x_0=200000 +y_0=600000 +ellps=GRS80 +towgs84=0,0,0,0,0,0,0 +units=m +no_defs</proj4>
-          <srsid>28050</srsid>
-          <srid>5186</srid>
-          <authid>EPSG:5186</authid>
-          <description>Korea 2000 / Central Belt 2010</description>
-          <projectionacronym>tmerc</projectionacronym>
-          <ellipsoidacronym>GRS80</ellipsoidacronym>
-          <geographicflag>false</geographicflag>
-        </spatialrefsys>
-      </srs>
-      <provider encoding="System">ogr</provider>
-      <previewExpression></previewExpression>
-      <vectorjoins/>
-      <expressionfields/>
-      <map-layer-style-manager current="">
-        <map-layer-style name=""/>
-      </map-layer-style-manager>
-      <edittypes>
-        <edittype widgetv2type="TextEdit" name="L1RIVCD">
-          <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
-        </edittype>
-        <edittype widgetv2type="TextEdit" name="L1RIVNM">
-          <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
-        </edittype>
-        <edittype widgetv2type="TextEdit" name="L2RIVCD">
-          <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
-        </edittype>
-        <edittype widgetv2type="TextEdit" name="L2RIVNM">
-          <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
-        </edittype>
-        <edittype widgetv2type="TextEdit" name="VIS">
-          <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
-        </edittype>
-        <edittype widgetv2type="TextEdit" name="NRIVCD">
-          <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
-        </edittype>
-        <edittype widgetv2type="TextEdit" name="NRIVNM">
-          <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
-        </edittype>
-      </edittypes>
-      <renderer-v2 symbollevels="0" type="singleSymbol">
-        <symbols>
-          <symbol alpha="1" type="fill" name="0">
-            <layer pass="0" class="SimpleFill" locked="0">
-              <prop k="border_width_map_unit_scale" v="0,0"/>
-              <prop k="color" v="29,219,26,255"/>
-              <prop k="joinstyle" v="bevel"/>
-              <prop k="offset" v="0,0"/>
-              <prop k="offset_map_unit_scale" v="0,0"/>
-              <prop k="offset_unit" v="MM"/>
-              <prop k="outline_color" v="0,0,0,255"/>
-              <prop k="outline_style" v="solid"/>
-              <prop k="outline_width" v="0.26"/>
-              <prop k="outline_width_unit" v="MM"/>
-              <prop k="style" v="solid"/>
-            </layer>
-          </symbol>
-        </symbols>
-        <rotation/>
-        <sizescale scalemethod="area"/>
-      </renderer-v2>
-      <customproperties/>
-      <blendMode>0</blendMode>
-      <featureBlendMode>0</featureBlendMode>
-      <layerTransparency>0</layerTransparency>
-      <displayfield>L1RIVCD</displayfield>
-      <label>0</label>
-      <labelattributes>
-        <label fieldname="" text="Label"/>
-        <family fieldname="" name="Noto Sans"/>
-        <size fieldname="" units="pt" value="12"/>
-        <bold fieldname="" on="0"/>
-        <italic fieldname="" on="0"/>
-        <underline fieldname="" on="0"/>
-        <strikeout fieldname="" on="0"/>
-        <color fieldname="" red="0" blue="0" green="0"/>
-        <x fieldname=""/>
-        <y fieldname=""/>
-        <offset x="0" y="0" units="pt" yfieldname="" xfieldname=""/>
-        <angle fieldname="" value="0" auto="0"/>
-        <alignment fieldname="" value="center"/>
-        <buffercolor fieldname="" red="255" blue="255" green="255"/>
-        <buffersize fieldname="" units="pt" value="1"/>
-        <bufferenabled fieldname="" on=""/>
-        <multilineenabled fieldname="" on=""/>
-        <selectedonly on=""/>
-      </labelattributes>
-      <editform>.</editform>
-      <editforminit/>
-      <featformsuppress>0</featformsuppress>
-      <annotationform>.</annotationform>
-      <editorlayout>generatedlayout</editorlayout>
-      <excludeAttributesWMS/>
-      <excludeAttributesWFS/>
-      <attributeactions/>
-      <edittypes>
-        <edittype widgetv2type="TextEdit" name="L1RIVCD">
-          <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
-        </edittype>
-        <edittype widgetv2type="TextEdit" name="L1RIVNM">
-          <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
-        </edittype>
-        <edittype widgetv2type="TextEdit" name="L2RIVCD">
-          <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
-        </edittype>
-        <edittype widgetv2type="TextEdit" name="L2RIVNM">
-          <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
-        </edittype>
-        <edittype widgetv2type="TextEdit" name="VIS">
-          <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
-        </edittype>
-        <edittype widgetv2type="TextEdit" name="NRIVCD">
-          <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
-        </edittype>
-        <edittype widgetv2type="TextEdit" name="NRIVNM">
-          <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
-        </edittype>
-      </edittypes>
     </maplayer>
     <maplayer minimumScale="-4.65661e-10" maximumScale="1e+08" simplifyDrawingHints="1" minLabelScale="0" maxLabelScale="1e+08" simplifyDrawingTol="1" geometry="Polygon" simplifyMaxScale="1" type="vector" hasScaleBasedVisibilityFlag="0" simplifyLocal="1" scaleBasedLabelVisibilityFlag="0">
       <id>river_PyeongChang20160503121802108</id>
@@ -2369,7 +2277,7 @@
         </spatialrefsys>
       </srs>
       <provider encoding="System">ogr</provider>
-      <previewExpression></previewExpression>
+      <previewExpression>COALESCE( "no", '&lt;NULL>' )</previewExpression>
       <vectorjoins/>
       <expressionfields/>
       <map-layer-style-manager current="">
@@ -3616,7 +3524,6 @@
       <LayerSnappingList type="QStringList">
         <value>Korea_center201020160329184055688</value>
         <value>PC_Basin20160329221106015</value>
-        <value>river_Korea20160503121710868</value>
         <value>river_PyeongChang20160503121802108</value>
         <value>st020160411235706538</value>
         <value>st120160329212404867</value>
@@ -3628,7 +3535,6 @@
         <value>temp_points20160329205648928</value>
       </LayerSnappingList>
       <LayerSnappingEnabledList type="QStringList">
-        <value>disabled</value>
         <value>disabled</value>
         <value>disabled</value>
         <value>disabled</value>
@@ -3655,10 +3561,8 @@
         <value>2</value>
         <value>2</value>
         <value>2</value>
-        <value>2</value>
       </LayerSnappingToleranceUnitList>
       <LayerSnapToList type="QStringList">
-        <value>to_vertex_and_segment</value>
         <value>to_vertex_and_segment</value>
         <value>to_vertex_and_segment</value>
         <value>to_vertex_and_segment</value>
@@ -3674,7 +3578,6 @@
       <DefaultSnapType type="QString">off</DefaultSnapType>
       <DefaultSnapTolerance type="double">0</DefaultSnapTolerance>
       <LayerSnappingToleranceList type="QStringList">
-        <value>0.000000</value>
         <value>0.000000</value>
         <value>0.000000</value>
         <value>0.000000</value>
