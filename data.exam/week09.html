@@ -1,0 +1,280 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html><head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<title>week09</title>
+	<meta name="Generator" content="Zim 0.65">
+	<style type="text/css">
+		a          { text-decoration: none      }
+		a:hover    { text-decoration: underline }
+		a:active   { text-decoration: underline }
+		strike     { color: grey                }
+		u          { text-decoration: none;
+					 background-color: yellow   }
+		tt         { color: #2e3436;            }
+		pre        { color: #2e3436;
+					 margin-left: 20px          }
+		h1         { text-decoration: underline;
+					 color: #4e9a06; margin-bottom: 0 }
+		h2         { color: #4e9a06; margin-bottom: 0 }
+		h3         { color: #4e9a06; margin-bottom: 0 }
+		h4         { color: #4e9a06; margin-bottom: 0 }
+		h5         { color: #4e9a06; margin-bottom: 0 }
+		p          { margin-top: 0              }
+		span.zim-tag {
+			color: #ce5c00;
+		}
+		div.zim-object {
+			border-style:solid;
+			border-width:1px;
+		}
+		.checked-box {list-style-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAAZiS0dEAP8A/wD/oL2nkwAAAAlwSFlzAAANOgAADMQBiN+4gQAAAAd0SU1FB9gKGQ8sMEGsKGkAAAAZdEVYdENvbW1lbnQAQ3JlYXRlZCB3aXRoIEdJTVBXgQ4XAAAEBUlEQVRIx62V22tdRRTGf7Nn73P2ybntnNOe3NqkPTGgLTVUUZF6QatSLOKTPgqCIqLgQ0H/A1sQQbBYCBb1QfAxiC8tSO1FqHkwJVKtjdTGNraUmObsc9nXmfGh7cGYpM1D5nHWzPetteZb3wg2eB2YqYm4zSadsMtoboiNBH/3TE0awx6j+MRoxoTg/IYRvP19TQrJS0bzhdHGSyKFkLTtjSKwMjyiEz43ynhtP6bdjBCWyFobAf7eT7VhNF/q1FRbjYjmUohlCVPwnB+6FUxMTJipqSmUUhhjEGKd3bMT4ks/Y6oLBK2Yth8hHYtCJXOix7Nf7xLMzc0xOzvLzp078TyPNE3viW3QJPXzhNWbxFFKHCmMhoLn/FHodd48vGfhapdAacXQlkFK5dL6wIUm6fuTZPuvqDQhaMUYYyiVyuQr6rXDexYuAdi3tSv1ZJNs/R/CaszzT+1na88uXFnCEnJVgivBNN8uTJKmHQI/ptOOcXNZzMz9mOqFs90OHpipWcYwlo5P4ebnuOkrvr5wgrH+h3im7y36MzuwRXYZeKha/OhP0EkadFoxQSdGSotedR/+XwMc2XvKdNUFOFqZx6LKZWIiwjgkikNmLp/hm8sH+K1zjFTHXfBYdTi+eJArzXM0GxFxoBDCopLvo/fqEwi1XPkWkGqjFo2TgB1jOYZUKZTS/D1/ncmLh7jon0IbRWoiTi59ymzzJEEQE3cStNZsGxqlfPE57MBbOR8fP3hDGalOO9fq2DlBvmZw8xa2IxACGn6TydlD/O6f5OzSV/zif0cYhLQaEXGkKBbz7Ov/AOlXV1cxgBJRI3fuSTrpTawt18kWIZN1CFuaONI0w0WOXfsI43YIggh/KUSlhqxrMz74AkOZcWBm9QkH+Gw8NDLuITi+m0yzhluSyJzBLcpblUhFxywSRAEtPwQjsKVN30CNh0uvYuOubSHLtN3J0TO1j0pmBNuFbFWRK0gyPRZpktL2I5JQkclKakNlnh54g6ocvevUr/Ai2a7wineEkcJupA3S1Wg0nVZM2E6wbEF5U5G9Q++wI7sfR7h3N8HVNstykBfzH+KJEZwiWD0aIwxCgJ0R1Mu7GXOeJSuK93bZtQIle4D9pUNU5DC5jEsu55AvZakM5NicGyEj8uuz8bUCQgj67QfY671P3vEoeC69gy695U1U7NG7XV0pUwBjDJa1/JJlWWxzHuflzQe5FJ/GsgUVuZ2t8lEkTvfc0aNHb72flBhjVicQQqCUuvM3/M+WDVguWBrMVdDXEGZlBVEUrVCU9d9s5+fnaTQa2PZyPxEIhJaI1EEoZwX4ncynp6fXrmB4eJjR0VFarRbNZnP9P9rt9gohqNVq1Ov1ZbF/AZGev3hLJ2/zAAAAAElFTkSuQmCC)}
+		.xchecked-box {list-style-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAAZiS0dEAP8A/wD/oL2nkwAAAAlwSFlzAAANOgAADMQBiN+4gQAAAAd0SU1FB9gKGQ8bDYnDxEwAAAAZdEVYdENvbW1lbnQAQ3JlYXRlZCB3aXRoIEdJTVBXgQ4XAAAEK0lEQVRIx9WVS2hTWRjHf/eR3CY1nbxMH2YiZRQS6qO13YlMVxY3SnVcuNIBFezGpSADLoQqLu1sHJCqdCFSXFpw4YOCSH3BtFqttTNamabX3DS5bfO6uffMoglja3RGcDMHzuac7/z/53++//cd+L8P6VuCPQYZ8ADNgBd4J31DcDcQs+GnHByRocEDv0kfBSjAOlYCs11Q+gpwDegS8LMJ+3QIK0ATzEhV8Odnz5bzw8P4dJ25aJQ/WlvJ1df/K7hSLtOcTNI+Pk69rpMTgqIQhCDvh1/VSpw79+gRrRMTmLZNezLJJsPg+a5dmOEwQlFqg1sWG16/Jv7sGWXDwBACFQjC9HcwIMONKkGp4PGAJGEDS0IQmZlhnWnye3c3eiyGo6qr3WHbrJ+dJf7gAXI6zSIr72T7/fgzmT4FHnTBsgrQBfYvTU0km5vxz86iADnAm0rRPTWFt7cXZccOJJcLAGHb2K9ekT93jmwmwwdAAFpjI6Ntbfxw5879ag7l6o1sr5eHHR3IsRgeQK/M4sQE+YEB7JcvEY6zAj45SWFgAPPxYwzHoQxIkQjTPT0kIxE+Noj8sexFn4/xnh58iQTeSpHkHAdrbIzi0BCOrmNPTpK/eJHM3bt8sCyKQCiR4NWePWSiUZw1+ZLXJm4pFKLhzBlCsRh2RUXacVgeGaF47RrL58+zcP8+RrmMkCQinZ1EL1zAjERqmkH+tLYl1G3bCJw4QUjT0IA0MJfLMX/5MqmHD0nZNiUgtGULG/r7ccXjINWuWbnmqsuFu7sb/4EDNLlcBIEioNs2KUAFGmMxmk6dQm1tRZI+3xBqEkiShBQOox05Ql1nJ26gvuIUAWiKQnj/ftStW5Fk+YuF+NldsbBA4cYN9KdPmaso8Fc62ZJtk7l1C2t0FGdxESHE1xE4hkHh6lX0oSHSpRIewC/LrPf7CSgKNpCamkI/fZr8pUuIZBIcpyaBunahPp1mub+fDyMjGKUSChCsq6Nh717q9u2jbnSU0uAgRrFIwTThyhUCqRS+hgZKLS1fJvDm87SNjZGcnsYUAjcQ8vsJ9/Xh7u1FDgRQN20iks3iDA+zZFmYhQLqzZtsj8WY3L0baY2Sf55ICCKpFHUzM2SEQAJCHg+hY8fQDh5EDgRWDoRC1J88SePRo2geD0XAcBy8b98Sv3ePYDZbbf2rFQjLIphMsmDbaEBQVQkePox26BCSz7e6i4bDrDt+nGYhmBscpFAskheC4Js3bPR4qHphFYEnlcI7P4/jdqNpGu8TCe4oCsXr1z//F2ga3+/cSfTJE0qmSVYIsKzaOZDcbjKyzFIiwfvt21kMBLA07YsetzWNd+3tLLW0sH5igvT8PH9Go/z44kX+E4LGjg7GDYOcy4XlOEgLC//5P/5LCFzxOPLmzWyIx+m6fduu7v0NVGqyTSycKksAAAAASUVORK5CYII=)}
+		.unchecked-box {list-style-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAAZiS0dEAP8A/wD/oL2nkwAAAAlwSFlzAAANOgAADMQBiN+4gQAAAAd0SU1FB9gKGQ8qAt8h3m8AAAAZdEVYdENvbW1lbnQAQ3JlYXRlZCB3aXRoIEdJTVBXgQ4XAAAA60lEQVRIx+2VsQqDMBRF70sCLg5OLoKgjk7+lJ/hh+STXBwcnRz8ArMEkrxOFktbaC3tULzTg5e8k5vADXDq70VbobXmvu/hvQczg4heHrJfXxQFuq67blZbMc8zpmlCXddIkgTOuZcBUko45zCOI6y1Nz2xFSEEZFmGOI7fGg4A3nsQEZqmuXOu9jallACAtm3fvmutNaIoAjM/dkBECCF89KCbk4eAb+kEnIAT8EsAM0OIz3hSyrssUvss8t5fg+uIrLXPs0gIgWVZYIyBUurQyYdheO4gz3NUVQVjDNZ1PfSjpWmKsixvehfB9GBZ3NndrgAAAABJRU5ErkJggg==)}
+		ul {list-style-image: none}
+		/* ul rule needed to reset style for sub-bullets */
+	</style>
+<link href="week09_files/translator.css" id="SL_Style" type="text/css" rel="stylesheet"></head>
+<body>
+
+<!-- Wiki content -->
+
+	<h1>week09</h1>
+
+<p>
+중간고사 및 개인프로젝트 계획 / Midterm Exam and Planning Final Presentation
+</p>
+
+<h2>Problems</h2>
+
+<br>
+
+<h3 id="problem.01">Problem 01 : 파일 불러오기 / Import Data</h3>
+
+<p>
+</p><div style="padding-left: 30pt">
+<i>01.01</i> : 다음의 Shpefile 데이터들을 불러오시오. Import the shape files into project.
+</div>
+<div style="padding-left: 60pt">
+<tt>pc.basin.shp</tt> : 평창강 유역<br>
+<tt>Korea.shp</tt> : 한국 대권역<br>
+<tt>Korea.asc.shp</tt> : 안성천 유역<br>
+<b>Tip</b> → Layer &gt; Add Layer &gt; Add Vector Layer
+</div>
+<p></p>
+
+<p>
+</p><div style="padding-left: 30pt">
+<i>01.02</i> : 다음의 Raster 데이터를 불러오시오. Import the Raster files into project.
+</div>
+<div style="padding-left: 60pt">
+<tt>pc.dem.tif</tt> : 평창강 유역 수치표고 모형<br>
+<tt>pc.ldcv.asc</tt> : 평창강 유역 토지피복도<br>
+<b>Tip</b> → Layer &gt; Add Layer &gt; Add Raster Layer
+</div>
+<p></p>
+
+<p>
+</p><div style="padding-left: 30pt">
+<i>01.03</i> : 다음의 CSV 파일을 불러오시오. Import the CSV files into project.
+</div>
+<div style="padding-left: 60pt">
+<tt>st.wls.csv</tt> : 한국 수위관측소<br>
+<b>Tip</b> → Layer &gt; Add Layer &gt; Add Delimited Text Layer
+</div>
+<div style="padding-left: 120pt">
+X field : X (EPSG 5186)<br>
+Y field : Y (EPSG 5186)
+</div>
+<p></p>
+
+<p>
+</p><div style="padding-left: 30pt">
+<i>01.04</i> : 불러온 <tt>st.wls.csv </tt>파일을 shapefile로 변환하시오. Convert csv file to shapefile named st.wls.shp
+</div>
+<div style="padding-left: 60pt">
+<b>Tip</b> → Right click &gt; Save as
+</div>
+<p></p>
+
+<br>
+
+<h3 id="problem.02">Problem 02 : 좌표계 / Coordinate System</h3>
+
+<p>
+</p><div style="padding-left: 30pt">
+<i>02.01</i> : 프로젝트가 시작될때 기본 CRS를 "EPSG:5186"으로 설정하시오. Set default CSR with "EPSG:5186"
+</div>
+<div style="padding-left: 60pt">
+<b>Tip</b> → Setting &gt; Options &gt; CRS &gt; Always start new projects with following CRS
+</div>
+<p></p>
+
+<p>
+</p><div style="padding-left: 30pt">
+<i>02.02</i> : Korea.shp 파일의 좌표계를 EPSG 5186으로 변환하시오. (파일 이름 
+Korea.e5186.shp) Convert CRS of the file Korea.shp to EPSG 5186 named 
+Korea.e5186.shp
+</div>
+<div style="padding-left: 60pt">
+<b>Tip</b> → Right click &gt; Save As &gt; CRS
+</div>
+<p></p>
+
+<p>
+</p><div style="padding-left: 30pt">
+<i>02.03</i> : pc.basin.shp 파일의 좌표계를 EPSG 5186으로 변환하시오. (파일 이름 
+pc.basin.e5186.shp) Convert CRS of the file pc.basin.shp to EPSG 5186 
+named pc.basin.e5186.shp
+</div>
+<div style="padding-left: 60pt">
+<b>Tip</b> → Right click &gt; Save As &gt; CRS
+</div>
+<p></p>
+
+<p>
+</p><div style="padding-left: 30pt">
+<i>02.04</i> : pc.dem.tif 파일의 좌표계를 EPSG 5186으로 변환하시오. (파일 이름 
+pc.dem.e5186.tif) Convert CRS of the file pc.dem.tif to EPSG 5186 named 
+pc.dem.e5186.tif
+</div>
+<div style="padding-left: 60pt">
+<b>Tip</b> → Raster &gt; Wrap(Reproject)...
+</div>
+<p></p>
+
+<br>
+
+<h3 id="problem.03">Probem 03 : 벡터 다루기 /Working with Vector</h3>
+
+<p>
+</p><div style="padding-left: 30pt">
+<i>03.01</i> : pc.basin의 소유역 각각의 면적을 계산하여라. Calculate each subbasin in Pyeongchang basin.
+</div>
+<div style="padding-left: 60pt">
+<b>Tip</b> → Right click &gt; Open Attribute Table &gt; Open filed calculator &gt; Geometry &gt; Area
+</div>
+<p></p>
+
+<p>
+</p><div style="padding-left: 30pt">
+<i>03.02</i> : 한강권역만 따로 Shapefile로 저장한다. From the file Korea.shp, save only Han River basin named han.shp
+</div>
+<div style="padding-left: 60pt">
+<b>Tip</b> → Right click &gt; Save as &gt; check "Save only selected features"
+</div>
+<p></p>
+
+<p>
+</p><div style="padding-left: 30pt">
+<i>03.03</i> : 한강권역의 수위 관측소를 추출해서 st.wls.han.shp 파일명으로 저장한다. Extract 
+only water level station in Han river basin area and save to the file 
+named st.wls.han.shp.
+</div>
+<div style="padding-left: 60pt">
+<b>Tip</b> : Vector &gt; Geoprocessing Tools &gt; Clip...<br>
+Input vector layer : st.wls.shp<br>
+Clip layer : Korea
+</div>
+<p></p>
+
+<p>
+</p><div style="padding-left: 30pt">
+<i>03.04</i> : 한강권역(han.shp)과 안성천(Korea.asc.shp) 유역 Shapefile을 하나의 
+Shapefile로 만드시오. (파일명 korea.an.asc.shp) Unify the two shape files 
+han.shp and Korea.asc.shp to the file named korea.han.asc.shp.
+</div>
+<div style="padding-left: 60pt">
+<b>Tip</b> : Vector &gt; Geoprocessing Tools &gt; Union...<br>
+Input vector layer : han.shp<br>
+Union layer : korea.asc.shp
+</div>
+<p></p>
+
+<br>
+
+<h3 id="problem.04">Problem 04 : 레스터 다루기 / Working with Raster</h3>
+
+<p>
+</p><div style="padding-left: 30pt">
+<i>04.01</i> : DEM을 평창강 유역 마스크(pc.basin)으로 clip 하시오. Clip the pc.dem.tif with pc.basin and save to named pc.dem.cliped.tif
+</div>
+<div style="padding-left: 60pt">
+<b>Tip</b> → Raster &gt; Extraction &gt; Clipper<br>
+Input file : pc.dem<br>
+Check "Mask layer"
+</div>
+<p></p>
+
+<p>
+</p><div style="padding-left: 30pt">
+<i>04.02</i> : pc.dem.cliped.tif DEM으로 부터 등고선(pc.contour.shp)을 그리시오. Make contourfile name pc.contour.shp from pc.dem.cliped.tif
+</div>
+<div style="padding-left: 60pt">
+<b>Tip</b> → Raster &gt; Extraction &gt; Contour<br>
+Interval between contour lines : 100
+</div>
+<p></p>
+
+<p>
+</p><div style="padding-left: 30pt">
+<i>04.03</i> : 토지피복도(pc.ldcv.asc) 파일포멧을 .asc에서 .tiff 로 변경하시오. Convert file format of pc.ldcv.asc to tif file format
+</div>
+<div style="padding-left: 60pt">
+<b>Tip</b> → Raster &gt; Conversion &gt; Translate(Convert Format)...
+</div>
+<p></p>
+
+<br>
+
+<h3 id="problem.05">Problem 05 : 지도 제작 / Map Producing</h3>
+
+<p>
+</p><div style="padding-left: 30pt">
+<i>05.01</i> : 다음의 Print Composer를 그리시오. Draw like following with Print Composer
+</div>
+<p></p>
+
+<p>
+</p><div style="padding-left: 60pt">
+<img src="week09_files/print%2520composour.png">
+</div>
+<p></p>
+
+<br>
+
+<h3 id="problem.06">Problem 06 : 플러그 인 / Plug-ins</h3>
+
+<p>
+</p><div style="padding-left: 30pt">
+<i>06.01</i> : TMS for Korea 플러그인을 설치하여, 대한민국 지이미지를 불러 오시오. Install the plug-in TSM for Korea and import a Korea map image.
+</div>
+<div style="padding-left: 60pt">
+<b>Tip</b>  → Plugins &gt; Manage and install plugins ... &gt;  TMS for Korea
+</div>
+<div style="padding-left: 120pt">
+Web &gt; TMS for Korea
+</div>
+<p></p>
+
+<br>
+
+<h1>Reference</h1>
+
+<p>
+</p><div style="padding-left: 30pt">
+<u>Ans</u> → 530106303 m<sup>3</sup>
+</div>
+<p></p>
+
+<br>
+
+<h1>End</h1>
+
+
+
+<!-- End wiki content -->
+
+
+
+
+<div style="display: none;" id="SL_balloon_obj"><div style="background: transparent url(&quot;chrome://imtranslator/content/img/util/imtranslator-s.png&quot;) repeat scroll 0% 0%; display: block; width: 24px; height: 24px; position: absolute; cursor: pointer;" id="SL_button"></div><div style="display: none;" id="SL_shadow_translation_result2"></div><div id="SL_shadow_translator"><div id="SL_providers"><div id="SL_P0" title="Google" class="SL_BL_LABLE_ON">G</div><div id="SL_P1" title="Microsoft" class="SL_BL_LABLE_ON">M</div><div id="SL_P2" title="Translator" class="SL_BL_LABLE_ON">T</div></div><div style="background: rgb(244, 245, 245) url(&quot;chrome://imtranslator/content/img/util/bg2.png&quot;) repeat scroll 0% 0%;" id="SL_planshet"><div id="SL_TB"><div style="background: transparent url(&quot;chrome://imtranslator/content/img/util/imtranslator-s.png&quot;) repeat scroll 0% 0%; display: block; width: 24px; height: 24px; cursor: pointer; position: absolute;" id="bubblelogo"></div><table id="SL_tables"><tr><td align="right" width="10%"><input title="Lock-in language" id="SLloc" type="checkbox"></td><td align="left" width="20%"><select id="SL_lng_from"><option selected="selected" value="auto">Detect language</option><option value="af">Afrikaans</option><option value="sq">Albanian</option><option value="ar">Arabic</option><option value="hy">Armenian</option><option value="az">Azerbaijani</option><option value="eu">Basque</option><option value="be">Belarusian</option><option value="bn">Bengali</option><option value="bs">Bosnian</option><option value="bg">Bulgarian</option><option value="ca">Catalan</option><option value="ceb">Cebuano</option><option value="ny">Chichewa</option><option value="zh-CN">Chinese (Simplified)</option><option value="zh-TW">Chinese (Traditional)</option><option value="hr">Croatian</option><option value="cs">Czech</option><option value="da">Danish</option><option value="nl">Dutch</option><option value="en">English</option><option value="eo">Esperanto</option><option value="et">Estonian</option><option value="tl">Filipino</option><option value="fi">Finnish</option><option value="fr">French</option><option value="gl">Galician</option><option value="ka">Georgian</option><option value="de">German</option><option value="el">Greek</option><option value="gu">Gujarati</option><option value="ht">Haitian Creole</option><option value="ha">Hausa</option><option value="iw">Hebrew</option><option value="hi">Hindi</option><option value="hmn">Hmong</option><option value="hu">Hungarian</option><option value="is">Icelandic</option><option value="ig">Igbo</option><option value="id">Indonesian</option><option value="ga">Irish</option><option value="it">Italian</option><option value="ja">Japanese</option><option value="jw">Javanese</option><option value="kn">Kannada</option><option value="kk">Kazakh</option><option value="km">Khmer</option><option value="ko">Korean</option><option value="lo">Lao</option><option value="la">Latin</option><option value="lv">Latvian</option><option value="lt">Lithuanian</option><option value="mk">Macedonian</option><option value="mg">Malagasy</option><option value="ms">Malay</option><option value="ml">Malayalam</option><option value="mt">Maltese</option><option value="mi">Maori</option><option value="mr">Marathi</option><option value="mn">Mongolian</option><option value="my">Myanmar (Burmese)</option><option value="ne">Nepali</option><option value="no">Norwegian</option><option value="fa">Persian</option><option value="pl">Polish</option><option value="pt">Portuguese</option><option value="pa">Punjabi</option><option value="ro">Romanian</option><option value="ru">Russian</option><option value="sr">Serbian</option><option value="st">Sesotho</option><option value="si">Sinhala</option><option value="sk">Slovak</option><option value="sl">Slovenian</option><option value="so">Somali</option><option value="es">Spanish</option><option value="su">Sundanese</option><option value="sw">Swahili</option><option value="sv">Swedish</option><option value="tg">Tajik</option><option value="ta">Tamil</option><option value="te">Telugu</option><option value="th">Thai</option><option value="tr">Turkish</option><option value="uk">Ukrainian</option><option value="ur">Urdu</option><option value="uz">Uzbek</option><option value="vi">Vietnamese</option><option value="cy">Welsh</option><option value="yi">Yiddish</option><option value="yo">Yoruba</option><option value="zu">Zulu</option></select></td><td align="center" width="5%"><div style="background: transparent url(&quot;chrome://imtranslator/content/img/util/switchb.png&quot;) repeat scroll 0% 0%; display: block; width: 10px; height: 10px; cursor: pointer;" title="Switch languages" id="SL_switch_b" align="center"></div></td><td align="left" width="20%"><select id="SL_lng_to"><option value="af">Afrikaans</option><option value="sq">Albanian</option><option value="ar">Arabic</option><option value="hy">Armenian</option><option value="az">Azerbaijani</option><option value="eu">Basque</option><option value="be">Belarusian</option><option value="bn">Bengali</option><option value="bs">Bosnian</option><option value="bg">Bulgarian</option><option value="ca">Catalan</option><option value="ceb">Cebuano</option><option value="ny">Chichewa</option><option value="zh-CN">Chinese (Simplified)</option><option value="zh-TW">Chinese (Traditional)</option><option value="hr">Croatian</option><option value="cs">Czech</option><option value="da">Danish</option><option value="nl">Dutch</option><option value="en">English</option><option value="eo">Esperanto</option><option value="et">Estonian</option><option value="tl">Filipino</option><option value="fi">Finnish</option><option value="fr">French</option><option value="gl">Galician</option><option value="ka">Georgian</option><option value="de">German</option><option value="el">Greek</option><option value="gu">Gujarati</option><option value="ht">Haitian Creole</option><option value="ha">Hausa</option><option value="iw">Hebrew</option><option value="hi">Hindi</option><option value="hmn">Hmong</option><option value="hu">Hungarian</option><option value="is">Icelandic</option><option value="ig">Igbo</option><option value="id">Indonesian</option><option value="ga">Irish</option><option value="it">Italian</option><option value="ja">Japanese</option><option value="jw">Javanese</option><option value="kn">Kannada</option><option value="kk">Kazakh</option><option value="km">Khmer</option><option value="ko">Korean</option><option value="lo">Lao</option><option value="la">Latin</option><option value="lv">Latvian</option><option value="lt">Lithuanian</option><option value="mk">Macedonian</option><option value="mg">Malagasy</option><option value="ms">Malay</option><option value="ml">Malayalam</option><option value="mt">Maltese</option><option value="mi">Maori</option><option value="mr">Marathi</option><option value="mn">Mongolian</option><option value="my">Myanmar (Burmese)</option><option value="ne">Nepali</option><option value="no">Norwegian</option><option value="fa">Persian</option><option value="pl">Polish</option><option value="pt">Portuguese</option><option value="pa">Punjabi</option><option value="ro">Romanian</option><option value="ru">Russian</option><option value="sr">Serbian</option><option value="st">Sesotho</option><option value="si">Sinhala</option><option value="sk">Slovak</option><option value="sl">Slovenian</option><option value="so">Somali</option><option selected="selected" value="es">Spanish</option><option value="su">Sundanese</option><option value="sw">Swahili</option><option value="sv">Swedish</option><option value="tg">Tajik</option><option value="ta">Tamil</option><option value="te">Telugu</option><option value="th">Thai</option><option value="tr">Turkish</option><option value="uk">Ukrainian</option><option value="ur">Urdu</option><option value="uz">Uzbek</option><option value="vi">Vietnamese</option><option value="cy">Welsh</option><option value="yi">Yiddish</option><option value="yo">Yoruba</option><option value="zu">Zulu</option></select></td><td align="center" width="5%"> </td><td align="center" width="6%"><div style="background: transparent url(&quot;chrome://imtranslator/content/img/util/tts-voice.png&quot;) repeat scroll 0% 0%;" title="Listen" id="SL_TTS_voice"></div></td><td align="center" width="6%"><div style="background: transparent url(&quot;chrome://imtranslator/content/img/util/copy_hand.png&quot;) repeat scroll 0% 0%;" title="Copy translation" id="SL_copy"></div></td><td align="center" width="6%"><div id="SL_bbl_font_patch"></div><div style="background: transparent url(&quot;chrome://imtranslator/content/img/util/font-off.png&quot;) repeat scroll 0% 0%;" title="Font size" id="SL_bbl_font"></div></td><td align="center" width="6%"><div style="background: transparent url(&quot;chrome://imtranslator/content/img/util/history.png&quot;) repeat scroll 0% 0%;" title="Translation History" id="SL_TH"></div></td><td width="10%"></td><td align="right" width="6%"><div style="background: transparent url(&quot;chrome://imtranslator/content/img/util/pin-off.png&quot;) repeat scroll 0% 0%; display: block; width: 16px; height: 16px; cursor: pointer;" title="Pin pop-up bubble" id="SL_pin"></div></td></tr></table></div></div><div style="background: rgb(255, 255, 255) url(&quot;chrome://imtranslator/content/img/util/bg.png&quot;) repeat scroll 0% 0%;" id="SL_shadow_translation_result"></div><div style="background: transparent url(&quot;chrome://imtranslator/content/img/util/indicator.gif&quot;) repeat scroll 0% 0%; display: block; position: absolute; width: 35px; margin-left: 180px; margin-top: -40px; height: 35px;" id="SL_loading"></div><div id="SL_player2"></div><div style="background: transparent url(&quot;chrome://imtranslator/content/img/util/bg2.png&quot;) repeat scroll 0% 0%;" id="SL_alert100">Text-to-speech function is limited to 100 characters</div><div style="background: transparent url(&quot;chrome://imtranslator/content/img/util/donate2.png&quot;) repeat scroll 0% 0%;" title="Make a small conribution" id="SL_bbl_donate"></div><div style="background: rgb(255, 255, 255) url(&quot;chrome://imtranslator/content/img/util/bg3.png&quot;) repeat scroll 0% 0%;" id="SL_Balloon_options"><a title="Show options" id="OPlnk" href="#">Options</a> : <a title="Translation History" id="HISTlnk" href="#">History</a> : <a title="Help" id="HELPlnk" target="_blank" href="http://about.imtranslator.net/tutorials/presentations/imtranslator-translator-for-firefox/popup-bubble-application/">Help</a> : <a title="Feedback" id="FBlnk" href="#">Feedback</a><a title="Close" href="#" id="SL_Balloon_Close">Close</a></div></div></div></body></html>

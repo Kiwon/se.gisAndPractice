@@ -188,6 +188,27 @@
                     </li>
                 </ul>1
             </li>
+            <li><a href="#week-09">Week 09 : 중간고사 / Mid-term Exam</a>
+                <ul>
+                    <li><a href="#problem.01">Problem.01 : 파일 풀러오기 / Import Data</a>
+                    </li>
+                    <li><a href="#problem.02">Problem.02 : 좌표계 / Coordinate System</a>
+                    </li>
+                    <li><a href="#problem.03">Problem.03 : 벡터 다루기 /Working with Vector
+</a>
+                    </li>
+                    <li><a href="#problem.04">Problem.04 : 레스터 다루기 / Working with Raster
+</a>
+                    </li>
+                    <li><a href="#problem.05">Problem.05 : 지도 제작 / Map Producing
+</a>
+                    </li>
+                    <li><a href="#problem.06">Problem.06 : 플러그 인 / Plug-ins
+</a>
+                    </li>
+
+                    </ul>1
+            </li>
             
             
         </ul>
@@ -1200,6 +1221,224 @@ Calculate Catchment Area.<br>
 </ul>
 
        
+        
+        <!-- Week 09 중간고사 / Mid-term Exam ======================================================== -->
+        <!---->
+        <!---->
+        <!---->
+        <!---->
+        <!---->
+        <div class="line-basic"> </div>
+        <h1 id="week-09">Week 09 : 중간고사 / Mid-term Exam</h1>
+        
+        
+        
+<h3 id="problem.01">Problem 01 : 파일 불러오기 / Import Data</h3>
+
+<p>
+</p><div style="padding-left: 30pt">
+<i>01.01</i> : 다음의 Shpefile 데이터들을 불러오시오. Import the shape files into project.
+</div>
+<div style="padding-left: 60pt">
+<tt>pc.basin.shp</tt> : 평창강 유역<br>
+<tt>Korea.shp</tt> : 한국 대권역<br>
+<tt>Korea.asc.shp</tt> : 안성천 유역<br>
+<b>Tip</b> → Layer &gt; Add Layer &gt; Add Vector Layer
+</div>
+<p></p>
+
+<p>
+</p><div style="padding-left: 30pt">
+<i>01.02</i> : 다음의 Raster 데이터를 불러오시오. Import the Raster files into project.
+</div>
+<div style="padding-left: 60pt">
+<tt>pc.dem.tif</tt> : 평창강 유역 수치표고 모형<br>
+<tt>pc.ldcv.asc</tt> : 평창강 유역 토지피복도<br>
+<b>Tip</b> → Layer &gt; Add Layer &gt; Add Raster Layer
+</div>
+<p></p>
+
+<p>
+</p><div style="padding-left: 30pt">
+<i>01.03</i> : 다음의 CSV 파일을 불러오시오. Import the CSV files into project.
+</div>
+<div style="padding-left: 60pt">
+<tt>st.wls.csv</tt> : 한국 수위관측소<br>
+<b>Tip</b> → Layer &gt; Add Layer &gt; Add Delimited Text Layer
+</div>
+<div style="padding-left: 120pt">
+X field : X (EPSG 5186)<br>
+Y field : Y (EPSG 5186)
+</div>
+<p></p>
+
+<p>
+</p><div style="padding-left: 30pt">
+<i>01.04</i> : 불러온 <tt>st.wls.csv </tt>파일을 shapefile로 변환하시오. Convert csv file to shapefile named st.wls.shp
+</div>
+<div style="padding-left: 60pt">
+<b>Tip</b> → Right click &gt; Save as
+</div>
+<p></p>
+
+<br>
+
+<h3 id="problem.02">Problem 02 : 좌표계 / Coordinate System</h3>
+
+<p>
+</p><div style="padding-left: 30pt">
+<i>02.01</i> : 프로젝트가 시작될때 기본 CRS를 "EPSG:5186"으로 설정하시오. Set default CSR with "EPSG:5186"
+</div>
+<div style="padding-left: 60pt">
+<b>Tip</b> → Setting &gt; Options &gt; CRS &gt; Always start new projects with following CRS
+</div>
+<p></p>
+
+<p>
+</p><div style="padding-left: 30pt">
+<i>02.02</i> : Korea.shp 파일의 좌표계를 EPSG 5186으로 변환하시오. (파일 이름 
+Korea.e5186.shp) Convert CRS of the file Korea.shp to EPSG 5186 named 
+Korea.e5186.shp
+</div>
+<div style="padding-left: 60pt">
+<b>Tip</b> → Right click &gt; Save As &gt; CRS
+</div>
+<p></p>
+
+<p>
+</p><div style="padding-left: 30pt">
+<i>02.03</i> : pc.basin.shp 파일의 좌표계를 EPSG 5186으로 변환하시오. (파일 이름 
+pc.basin.e5186.shp) Convert CRS of the file pc.basin.shp to EPSG 5186 
+named pc.basin.e5186.shp
+</div>
+<div style="padding-left: 60pt">
+<b>Tip</b> → Right click &gt; Save As &gt; CRS
+</div>
+<p></p>
+
+<p>
+</p><div style="padding-left: 30pt">
+<i>02.04</i> : pc.dem.tif 파일의 좌표계를 EPSG 5186으로 변환하시오. (파일 이름 
+pc.dem.e5186.tif) Convert CRS of the file pc.dem.tif to EPSG 5186 named 
+pc.dem.e5186.tif
+</div>
+<div style="padding-left: 60pt">
+<b>Tip</b> → Raster &gt; Wrap(Reproject)...
+</div>
+<p></p>
+
+<br>
+
+<h3 id="problem.03">Probem 03 : 벡터 다루기 /Working with Vector</h3>
+
+<p>
+</p><div style="padding-left: 30pt">
+<i>03.01</i> : pc.basin의 소유역 각각의 면적을 계산하여라. Calculate each subbasin in Pyeongchang basin.
+</div>
+<div style="padding-left: 60pt">
+<b>Tip</b> → Right click &gt; Open Attribute Table &gt; Open filed calculator &gt; Geometry &gt; Area
+</div>
+<p></p>
+
+<p>
+</p><div style="padding-left: 30pt">
+<i>03.02</i> : 한강권역만 따로 Shapefile로 저장한다. From the file Korea.shp, save only Han River basin named han.shp
+</div>
+<div style="padding-left: 60pt">
+<b>Tip</b> → Right click &gt; Save as &gt; check "Save only selected features"
+</div>
+<p></p>
+
+<p>
+</p><div style="padding-left: 30pt">
+<i>03.03</i> : 한강권역의 수위 관측소를 추출해서 st.wls.han.shp 파일명으로 저장한다. Extract 
+only water level station in Han river basin area and save to the file 
+named st.wls.han.shp.
+</div>
+<div style="padding-left: 60pt">
+<b>Tip</b> : Vector &gt; Geoprocessing Tools &gt; Clip...<br>
+Input vector layer : st.wls.shp<br>
+Clip layer : Korea
+</div>
+<p></p>
+
+<p>
+</p><div style="padding-left: 30pt">
+<i>03.04</i> : 한강권역(han.shp)과 안성천(Korea.asc.shp) 유역 Shapefile을 하나의 
+Shapefile로 만드시오. (파일명 korea.an.asc.shp) Unify the two shape files 
+han.shp and Korea.asc.shp to the file named korea.han.asc.shp.
+</div>
+<div style="padding-left: 60pt">
+<b>Tip</b> : Vector &gt; Geoprocessing Tools &gt; Union...<br>
+Input vector layer : han.shp<br>
+Union layer : korea.asc.shp
+</div>
+<p></p>
+
+<br>
+
+<h3 id="problem.04">Problem 04 : 레스터 다루기 / Working with Raster</h3>
+
+<p>
+</p><div style="padding-left: 30pt">
+<i>04.01</i> : DEM을 평창강 유역 마스크(pc.basin)으로 clip 하시오. Clip the pc.dem.tif with pc.basin and save to named pc.dem.cliped.tif
+</div>
+<div style="padding-left: 60pt">
+<b>Tip</b> → Raster &gt; Extraction &gt; Clipper<br>
+Input file : pc.dem<br>
+Check "Mask layer"
+</div>
+<p></p>
+
+<p>
+</p><div style="padding-left: 30pt">
+<i>04.02</i> : pc.dem.cliped.tif DEM으로 부터 등고선(pc.contour.shp)을 그리시오. Make contourfile name pc.contour.shp from pc.dem.cliped.tif
+</div>
+<div style="padding-left: 60pt">
+<b>Tip</b> → Raster &gt; Extraction &gt; Contour<br>
+Interval between contour lines : 100
+</div>
+<p></p>
+
+<p>
+</p><div style="padding-left: 30pt">
+<i>04.03</i> : 토지피복도(pc.ldcv.asc) 파일포멧을 .asc에서 .tiff 로 변경하시오. Convert file format of pc.ldcv.asc to tif file format
+</div>
+<div style="padding-left: 60pt">
+<b>Tip</b> → Raster &gt; Conversion &gt; Translate(Convert Format)...
+</div>
+<p></p>
+
+<br>
+
+<h3 id="problem.05">Problem 05 : 지도 제작 / Map Producing</h3>
+
+<p>
+</p><div style="padding-left: 30pt">
+<i>05.01</i> : 다음의 Print Composer를 그리시오. Draw like following with Print Composer
+</div>
+<p></p>
+
+<p>
+</p><div style="padding-left: 60pt">
+<img src="./img/print%2520composour.png">
+</div>
+<p></p>
+
+<br>
+
+<h3 id="problem.06">Problem 06 : 플러그 인 / Plug-ins</h3>
+
+<p>
+</p><div style="padding-left: 30pt">
+<i>06.01</i> : TMS for Korea 플러그인을 설치하여, 대한민국 지이미지를 불러 오시오. Install the plug-in TSM for Korea and import a Korea map image.
+</div>
+<div style="padding-left: 60pt">
+<b>Tip</b>  → Plugins &gt; Manage and install plugins ... &gt;  TMS for Korea
+</div>
+<div style="padding-left: 120pt">
+Web &gt; TMS for Korea
+</div>
         
         <!-- ============================================= -->
         <footer class="site-footer">
